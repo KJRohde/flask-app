@@ -4,10 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-	x = input("Please enter a number")
-	y = input("Please enter another number")
-	added = x + y
-	return ("The sum of the numbers you entered is " str(added))
+	return "Hello World! Digital Ocean is awesome! It deployed this app automatically with my git push!"
 
 if __name__ == "__main__":
 	app.run()
