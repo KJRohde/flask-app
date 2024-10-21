@@ -6,7 +6,8 @@ app = Flask(__name__)
 def hello_world():
 	x = input("Please enter a number")
 	y = input("Please enter another number")
-	return "The sum of the numbers you entered is " + str(x + y)
+	added = x + y
+	return ("The sum of the numbers you entered is " str(added))
 
 if __name__ == "__main__":
 	app.run()
